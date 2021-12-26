@@ -90,7 +90,10 @@
 
 .movie-details-content-btns {
   display: flex;
-  gap: 2rem;
+  // gap: 2rem;
+  // column-gap: 2rem;
+  // row-gap: 2rem;
+  grid-gap: 2rem;
 
   @media (max-width: 600px) {
     flex-wrap: wrap;
