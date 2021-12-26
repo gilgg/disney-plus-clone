@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Home.css";
+import "./Home.scss";
 import { useDispatch } from "react-redux";
 import ImgSlider from "./slider/ImgSlider";
 import Companies from "./companies-section/Companies";

@@ -1,5 +1,5 @@
 import React from "react";
-import "./MenuItem.css";
+import "./MenuItem.scss";
 // import homeIcon from "../../assets/imgs/icons/home-icon.svg";
 // import moviesIcon from "../../assets/imgs/icons/movie-icon.svg";
 // import originalsIcon from "../../assets/imgs/icons/original-icon.svg";
@@ -36,8 +36,8 @@ const MenuItem = ({ title }) => {
     <li className="nav-menu-list-item">
       <a href="#">
         {/* <img src={icons[title]} alt={title} /> */}
-        <span className="nav-item-icon">{icons[title]}</span>
-        <span>{title}</span>
+        <span className="nav-menu-list-item-icon">{icons[title]}</span>
+        <span className="nav-menu-list-item-title">{title}</span>
       </a>
     </li>
   );

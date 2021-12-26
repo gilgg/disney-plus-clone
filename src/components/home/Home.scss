@@ -1,16 +1,13 @@
 .home {
   position: relative;
   top: 70px;
-  /* height: 100vh; */
   background: url(../../assets/imgs/bg/home-background.png) no-repeat;
   background-size: cover;
   overflow: hidden;
   padding: 0rem 7rem 7rem 7rem;
-  /* width: 1500px; */
-}
 
-@media (max-width: 768px) {
-  .home {
+  @media (max-width: 768px) {
     padding: 0 3rem;
   }
 }
+

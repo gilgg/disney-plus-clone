@@ -1,14 +1,12 @@
 import React from "react";
-import "./CompanyCard.css";
+import "./CompanyCard.scss";
 
 const CompanyCard = ({ logo, video }) => {
   const handleOnMouseOver = (e) => {
-    // e.currentTarget.play();
     e.target.play();
   };
 
   const handleOnMouseOut = (e) => {
-    // e.currentTarget.pause();
     e.target.pause();
   };
 

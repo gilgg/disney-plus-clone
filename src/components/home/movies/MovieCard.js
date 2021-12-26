@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./MovieCard.css";
+import "./MovieCard.scss";
 
 const MovieCard = ({ id, name, cardImg }) => {
   return (

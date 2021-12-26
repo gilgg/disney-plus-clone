@@ -1,5 +1,5 @@
 import React from "react";
-import "./Companies.css";
+import "./Companies.scss";
 import CompanyCard from "./CompanyCard";
 import disneyLogo from "../../../assets/imgs/logos/viewers-disney.png";
 import marvelLogo from "../../../assets/imgs/logos/viewers-marvel.png";

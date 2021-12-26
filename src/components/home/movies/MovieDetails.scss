@@ -1,0 +1,168 @@
+@import "../../../scss/colors";
+@import "../../../scss/mixins";
+
+.movie-details {
+  position: fixed;
+  top: 70px;
+  height: 100vh;
+
+  &-bg-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+  }
+
+  &-container {
+    padding: 0 5rem;
+    @include flex-align-center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.movie-details-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+
+  &-title-img {
+    width: 35vw;
+    min-width: 4.5rem;
+    margin-bottom: 3.5rem;
+
+    @media (max-width: 992px) {
+      width: 65vw;
+    }
+
+    @media (max-width: 768px) {
+      width: 60vw;
+    }
+
+    @media (max-width: 600px) {
+      justify-self: center;
+    }
+
+    @media (max-width: 425px) {
+      width: 65vw;
+    }
+  }
+
+  &-icon {
+    color: $color-white;
+  }
+
+  &-subtitle {
+    color: $color-white;
+    font-size: 1.5rem;
+    width: 100%;
+
+    @media (max-width: 425px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &-desc {
+    line-height: 1.4;
+    color: $color-white;
+    font-size: 2rem;
+    width: 55%;
+    min-width: 4.5rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 1.6rem;
+      width: 100%;
+    }
+  }
+}
+
+.movie-details-content-btns {
+  display: flex;
+  gap: 2rem;
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+
+  &-btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  .play-btn,
+  .trailer-btn {
+    @include flex-align-center;
+    gap: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    padding: 1rem 2.4rem;
+    border-radius: 4px;
+  }
+
+  .play-btn {
+    @include flex-center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    background: $color-white;
+    border: none;
+    transition: 0.2s;
+
+    &:hover {
+      background: rgb(198, 198, 198);
+    }
+  }
+
+  .trailer-btn {
+    color: $color-white;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid $color-white;
+    transition: 0.2s;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .play-icon {
+    font-size: 1.8rem;
+
+    &-black {
+      color: $color-black;
+    }
+  }
+
+  .other-btns {
+    display: flex;
+    gap: 2rem;
+
+    .plus-btn,
+    .people-btn {
+      @include flex-center;
+      height: 5.8rem;
+      width: 5.8rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 2px solid $color-white;
+      border-radius: 50%;
+    }
+
+    .plus-icon,
+    .group-icon {
+      @include flex-align-center;
+      font-size: 2.5rem;
+    }
+  }
+}

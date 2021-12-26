@@ -1,0 +1,52 @@
+@import "../scss/colors";
+@import "../scss/mixins";
+
+.section-login {
+  height: 100vh;
+  @include flex-center;
+  text-align: center;
+  background: url(../../src/assets/imgs/bg/login-background.jpg) top no-repeat;
+  padding: 0 40px;
+}
+
+.login-content {
+  max-width: 650px;
+
+  @media (max-width: 750px) {
+    width: 100%;
+  }
+
+  .login-logo {
+    max-width: 92%;
+    margin-bottom: 7px;
+  }
+
+  .login-btn {
+    @include flex-center;
+    font-weight: 900;
+    color: $color-white;
+    background-color: $color-blue-btn;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    padding: 16.5px 0;
+
+    &:hover {
+      background-color: $color-blue-btn-hover;
+    }
+  }
+
+  .login-plan-info {
+    letter-spacing: 1.5px;
+    color: hsla(0, 0%, 95.3%, 1);
+    font-size: 11px;
+    margin: 0 0 24px;
+    line-height: 1.5;
+  }
+
+  .logo-two-img {
+    margin-bottom: 20px;
+  }
+}

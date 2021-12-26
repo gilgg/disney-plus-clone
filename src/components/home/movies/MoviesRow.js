@@ -1,11 +1,8 @@
 import React from "react";
-import "./MoviesRow.css";
+import "./MoviesRow.scss";
 import MovieCard from "./MovieCard";
-import { useSelector } from "react-redux";
 
 const MoviesRow = ({ title, movies }) => {
-  // const recommended = useSelector((state) => state.movie.recommended);
-
   return (
     <div className="movies-row">
       <h3 className="movies-row-title">{title}</h3>

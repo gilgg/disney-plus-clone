@@ -1,0 +1,40 @@
+@import "../../../scss/colors";
+
+.company-card {
+  position: relative;
+  padding-top: 56.25%;
+  background: linear-gradient(0deg, #1e1f2a 0%, #2f313d 67%);
+  border: 3px solid rgba($color-white, 0.1);
+  border-radius: 10px;
+  box-shadow: inset 0 0 50px rgba($color-black, 0.2);
+  box-shadow: 0 16px 17px -5px $color-black;
+  overflow: hidden;
+  transition: all 250ms ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    border: 3px solid rgba($color-white, 0.7);
+
+    video {
+      opacity: 1;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

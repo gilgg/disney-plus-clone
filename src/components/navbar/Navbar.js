@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Navbar.css";
+import "./Navbar.scss";
 import logo from "../../assets/imgs/logos/logo.svg";
 import MenuItem from "./MenuItem";
 import { auth, provider } from "../../firebase";

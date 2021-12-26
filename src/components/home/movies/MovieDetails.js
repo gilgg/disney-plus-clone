@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./MovieDetails.css";
+import "./MovieDetails.scss";
 import { useParams } from "react-router-dom";
 import { HiUserGroup } from "react-icons/hi";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -40,19 +40,19 @@ const MovieDetails = () => {
             alt={details.title}
           />
           <div className="movie-details-content-btns">
-            <button className="play-btn movie-details-content-btn">
+            <button className="play-btn movie-details-content-btns-btn">
               <FaPlay className="play-icon play-icon-black movie-details-content-icon" />
               <span>PLAY</span>
             </button>
-            <button className="trailer-btn movie-details-content-btn">
+            <button className="trailer-btn movie-details-content-btns-btn">
               <FaPlay className="play-icon play-icon-white movie-details-content-icon" />
               <span>TRAILER</span>
             </button>
             <div className="other-btns">
-              <button className="plus-btn movie-details-content-btn">
+              <button className="plus-btn movie-details-content-btns-btn">
                 <AiOutlinePlus className="plus-icon movie-details-content-icon" />
               </button>
-              <button className="people-btn movie-details-content-btn">
+              <button className="people-btn movie-details-content-btns-btn">
                 <HiUserGroup className="group-icon movie-details-content-icon" />
               </button>
             </div>

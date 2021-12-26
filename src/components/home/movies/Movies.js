@@ -1,5 +1,5 @@
 import React from "react";
-import "./Movies.css";
+import "./Movies.scss";
 import MoviesRow from "./MoviesRow";
 // import { recommended, newToDisney, originals, trending } from "./MoviesData";
 import { useSelector } from "react-redux";
