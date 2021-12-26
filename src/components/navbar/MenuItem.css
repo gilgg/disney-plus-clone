@@ -7,7 +7,7 @@
 .nav-menu-list-item a {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
   color: rgba(249, 249, 249);
 }
 
@@ -25,7 +25,7 @@
   position: relative;
 }
 
-.nav-menu-list-item span::after {
+.nav-menu-list-item span:last-child::after {
   content: "";
   background-color: rgb(249, 249, 249);
   border-radius: 0 0 4px 4px;
@@ -43,4 +43,9 @@
 .nav-menu-list-item a:hover span::after {
   transform: scaleX(1);
   opacity: 1;
+}
+
+.nav-item-icon {
+  font-size: 1.5rem;
+  /* margin-right: 0.1rem; */
 }

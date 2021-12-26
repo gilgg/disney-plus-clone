@@ -1,6 +1,7 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
+import { collection, getDocs, getData } from "firebase/firestore";
 import "firebase/compat/storage";
 
 const firebaseConfig = {
