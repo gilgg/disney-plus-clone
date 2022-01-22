@@ -1,28 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./MovieDetails.scss";
-import { useParams } from "react-router-dom";
 import { HiUserGroup } from "react-icons/hi";
 import { AiOutlinePlus } from "react-icons/ai";
 import { FaPlay } from "react-icons/fa";
-import { db } from "../../../firebase";
-import { collection, getDocs } from "firebase/firestore";
+import useGetDetailsFromDb from "../../../hooks/useGetDetailsFromDb";
 
 const MovieDetails = () => {
-  const movieId = useParams();
-  const [details, setDetails] = useState({});
-  console.log("movieId is: ", movieId);
-
-  useEffect(async () => {
-    const moviesRef = collection(db, "movies");
-    const moviesDocs = await getDocs(moviesRef);
-    const movieDoc = moviesDocs.docs.find((doc) => doc.id === movieId.movieId);
-    if (movieDoc) {
-      setDetails(movieDoc.data());
-      console.log("FOUND!");
-    } else {
-      console.error("No such document in firebase.");
-    }
-  }, [movieId]);
+  let details = {};
+  details = useGetDetailsFromDb();
 
   return (
     <div className="movie-details">

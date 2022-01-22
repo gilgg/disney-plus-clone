@@ -3,7 +3,8 @@
 
 .section-login {
   @include flex-center;
-  height: 100vh;
+  flex: 1;
+  margin-top: 70px;
   padding: 0 40px;
   text-align: center;
   background: url(../../src/assets/imgs/bg/login-background.jpg) top no-repeat;

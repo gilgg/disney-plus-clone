@@ -1,8 +1,7 @@
 import React from "react";
 import "./Movies.scss";
-import MoviesRow from "./MoviesRow";
-// import { recommended, newToDisney, originals, trending } from "./MoviesData";
 import { useSelector } from "react-redux";
+import MoviesRow from "./MoviesRow";
 
 const Movies = () => {
   const recommended = useSelector((state) => state.movie.recommended);

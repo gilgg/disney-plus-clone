@@ -8,7 +8,7 @@ import slide2 from "../../../assets/imgs/slides/slider-badging.jpg";
 import slide3 from "../../../assets/imgs/slides/slider-scale.jpg";
 import slide4 from "../../../assets/imgs/slides/slider-scales.jpg";
 
-const ImgSlider = (props) => {
+const ImgSlider = () => {
   let settings = {
     dots: true,
     infinite: true,

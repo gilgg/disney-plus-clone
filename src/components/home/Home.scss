@@ -1,13 +1,12 @@
 .home {
-  position: relative;
-  top: 70px;
+  flex: 1;
+  margin-top: 70px;
   padding: 0rem 7rem 7rem 7rem;
   background: url(../../assets/imgs/bg/home-background.png) no-repeat;
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
 
   @media (max-width: 768px) {
-    padding: 0 3rem;
+    padding: 0 3rem 3rem 3rem;
   }
 }
-

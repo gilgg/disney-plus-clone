@@ -1,54 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Navbar.scss";
 import logo from "../../assets/imgs/logos/logo.svg";
 import MenuItem from "./MenuItem";
-import { auth, provider } from "../../firebase";
-import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
-import { login, logout } from "../../store/authSlice";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
-  const dispatch = useDispatch();
-  const history = useHistory();
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
-  const userEmail = useSelector((state) => state.auth.email);
   const userPhoto = useSelector((state) => state.auth.photo);
 
-  useEffect(() => {
-    auth.onAuthStateChanged((user) => {
-      if (user) {
-        setUser(user);
-        history.replace("/home");
-      }
-    });
-  }, [userEmail]);
-
-  const setUser = (user) => {
-    dispatch(
-      login({
-        name: user.displayName,
-        email: user.email,
-        photo: user.photoURL,
-      })
-    );
-  };
-
-  const loginHandler = () => {
-    auth
-      .signInWithPopup(provider)
-      .then((result) => {
-        setUser(result.user);
-        history.replace("/home");
-      })
-      .catch((err) => alert(err.message));
-  };
-
-  const logoutHandler = () => {
-    auth.signOut();
-    dispatch(logout());
-    history.replace("/");
-  };
+  const { loginHandler, logoutHandler } = useAuth();
 
   return (
     <nav className="nav">

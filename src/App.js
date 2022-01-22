@@ -16,9 +16,10 @@ const App = () => {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Navbar />
+
         <Switch>
           <Route exact path="/">
             {!isLoggedIn && <Login />}

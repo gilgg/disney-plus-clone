@@ -1,4 +1,5 @@
 import React from "react";
+import "./MovieDetailsPage.scss";
 import MovieDetails from "../components/home/movies/MovieDetails";
 
 const MovieDetailsPage = () => {
