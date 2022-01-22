@@ -1,10 +1,10 @@
 .home {
   position: relative;
   top: 70px;
+  padding: 0rem 7rem 7rem 7rem;
   background: url(../../assets/imgs/bg/home-background.png) no-repeat;
   background-size: cover;
   overflow: hidden;
-  padding: 0rem 7rem 7rem 7rem;
 
   @media (max-width: 768px) {
     padding: 0 3rem;
