@@ -3,15 +3,6 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 import "firebase/compat/storage";
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyBbS67Z2p6oRZuKearb_fpQPDwBezJPGic",
-//   authDomain: "disney-plus-clone-b4f4e.firebaseapp.com",
-//   projectId: "disney-plus-clone-b4f4e",
-//   storageBucket: "disney-plus-clone-b4f4e.appspot.com",
-//   messagingSenderId: "681090204409",
-//   appId: "1:681090204409:web:e0c1402086bcf75a155828",
-// };
-
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
