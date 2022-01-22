@@ -7,10 +7,10 @@ import {
   Redirect,
 } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Login from "./components/Login";
-import Navbar from "./components/navbar/Navbar";
 import HomePage from "./pages/HomePage";
 import MovieDetailsPage from "./pages/MovieDetailsPage";
+import Login from "./components/Login";
+import Navbar from "./components/navbar/Navbar";
 
 const App = () => {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);

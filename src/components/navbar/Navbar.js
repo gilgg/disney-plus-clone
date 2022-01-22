@@ -1,10 +1,10 @@
 import React from "react";
 import "./Navbar.scss";
-import logo from "../../assets/imgs/logos/logo.svg";
-import MenuItem from "./MenuItem";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import MenuItem from "./MenuItem";
+import logo from "../../assets/imgs/logos/logo.svg";
 
 const Navbar = () => {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { auth, provider } from "../firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
+import { auth, provider } from "../firebase";
 import { login, logout } from "../store/authSlice";
 
 const useAuth = () => {
