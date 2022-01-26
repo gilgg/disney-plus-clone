@@ -20,6 +20,7 @@ We all know Disney, and we all have our special moments with their movies. This 
 
 ![HTML Icon](https://i.ibb.co/9tyHGr7/html-logo.png, "HTML")
 ![CSS Icon](https://i.ibb.co/b3QNSgX/css-logo.png, "CSS")
+![SASS Icon](https://i.ibb.co/2M5yfGb/sass-logo.png, "SASS")
 ![JavaScript Icon](https://i.ibb.co/L5RS8g1/Group-11.png, "JavaScript")
 ![React Icon](https://i.ibb.co/BBFKyz9/Group-9.png, "React")
 ![Firebase Icon](https://i.ibb.co/vwP5wyy/firebase-logo.png, "Firebase")
