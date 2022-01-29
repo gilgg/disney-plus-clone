@@ -37,4 +37,8 @@ We all know Disney, and we all have our special moments with their movies. This 
 
 <br />
 
-![Disney Plus Movie Details](https://i.ibb.co/94xgbWL/breaking-bad-cast-2.png)
+![Disney Plus Main](https://i.ibb.co/wK4VL29/disney-plus-3.png)
+
+<br />
+
+![Disney Plus Movie Details](https://i.ibb.co/hdsTGsF/disney-plus-4.png)
