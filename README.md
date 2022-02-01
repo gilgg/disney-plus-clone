@@ -29,16 +29,16 @@ We all know Disney, and we all have our special moments with their movies. This 
 
 # Screenshots 🎮
 
-![Disney Plus Login](https://i.ibb.co/vHtR4c5/disney-plus-1.png)
+![Disney Plus Login](https://i.ibb.co/2NnBDDM/disney-plus-1.png)
 
 <br />
 
-![Disney Plus Main](https://i.ibb.co/Cz7XjsC/disney-plus-2.png)
+![Disney Plus Main](https://i.ibb.co/JzLQJBB/disney-plus-2.png)
 
 <br />
 
-![Disney Plus Main](https://i.ibb.co/wK4VL29/disney-plus-3.png)
+![Disney Plus Main](https://i.ibb.co/xFnXXHh/disney-plus-3.png)
 
 <br />
 
-![Disney Plus Movie Details](https://i.ibb.co/hdsTGsF/disney-plus-4.png)
+![Disney Plus Movie Details](https://i.ibb.co/tBwYpDq/disney-plus-4.png)
